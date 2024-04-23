@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tic Tac Toe Game</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body>
+    <div id="gameContainer" class="container">
+        <!-- Creating a 3x3 Tic Tac Toe grid -->
+        <div class="row">
+            <div class="cell" id="0-0"></div>
+            <div class="cell" id="0-1"></div>
+            <div class="cell" id="0-2"></div>
+        </div>
+        <div class="row">
+            <div class="cell" id="1-0"></div>
+            <div class="cell" id="1-1"></div>
+            <div class="cell" id="1-2"></div>
+        </div>
+        <div class="row">
+            <div class="cell" id="2-0"></div>
+            <div class="cell" id="2-1"></div>
+            <div class="cell" id="2-2"></div>
+        </div>
+    </div>
+    <button id="restartButton" onclick="resetGame()">Restart Game</button>
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p id="modalText">Some text in the Modal..</p>
+        </div>
+    </div>
+    <script src="js/game.js"></script>
+</body>
+</html>

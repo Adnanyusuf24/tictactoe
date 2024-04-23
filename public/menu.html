@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+</head>
+<body>
+    <div id="start" class="window">
+        <div>
+            <img src="https://i.ibb.co/VNhxdLv/aim.png" alt="Logo">
+            <span>Tic Tac Toe</span>
+        </div>
+        <form id="startForm">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required placeholder="Enter Username">
+            
+            <label for="difficulty">Select Difficulty:</label>
+            <select id="difficulty">
+                <option value="easy">Easy</option>
+                <option value="medium">Medium</option>
+                <option value="hard">Hard</option>
+            </select>
+            
+            <button type="submit" class="startBtn">START</button>
+        </form>
+    </div>
+    <script src="js/menu.js" defer></script>
+</body>
+</html>

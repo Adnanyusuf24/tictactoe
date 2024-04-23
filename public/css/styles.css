@@ -1,0 +1,154 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.window {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+/* Logo and Title Styling */
+.window > div {
+    margin-bottom: 20px;
+}
+
+.window img {
+    max-width: 100px;
+}
+
+.window span {
+    display: block;
+    font-size: 24px;
+    color: #555;
+    margin-top: 8px;
+}
+
+/* Form Styling */
+#startForm {
+    margin: 0;
+}
+
+#startForm label {
+    font-weight: bold;
+}
+
+#startForm input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.startBtn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.startBtn:hover {
+    background-color: #45a049;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .window {
+        width: 90%;
+        padding: 10px;
+    }
+}
+
+/* Grid Styling */
+.row {
+    display: flex;
+}
+
+.cell {
+    width: 200px; /* or any size you prefer */
+    height: 200px; /* or any size you prefer */
+    border: 1px solid #000; /* for visibility */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 1.5em; /* Larger text for X and O */
+}
+
+/* For better visibility of the cell, especially when it's empty */
+.cell::before {
+    content: '-';
+    visibility: hidden;
+}
+
+.cell:hover::before {
+    visibility: visible;
+}
+
+#restartButton{
+    border: none;
+    border-radius: 4px;
+    padding: 8px 16px;
+    background-color: #00b4d8; /* Contrast blue for the button */
+    color: white;
+    text-transform: uppercase;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
